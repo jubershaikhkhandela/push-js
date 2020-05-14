@@ -17,4 +17,4 @@ const dbonfig= {
   messagingSenderId: "894223786260",
   appId: "1:894223786260:web:f2179d55ae089549f6e201",
   measurementId: "G-QE8G2KXRMH"
-},configData={api:"http://test.quranism.net/"};
+},configData={api:"https://test.quranism.net/"};
