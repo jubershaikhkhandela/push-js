@@ -1,5 +1,5 @@
 var d = new Date;
-jQuery.noConflict();
+var $j = jQuery.noConflict();
 
 function userAgentDetect() {
     window.navigator.userAgent.match(/Mobile/i) || window.navigator.userAgent.match(/iPhone/i) || window.navigator.userAgent.match(/iPod/i) || window.navigator.userAgent.match(/IEMobile/i) || window.navigator.userAgent.match(/Windows Phone/i) || window.navigator.userAgent.match(/Android/i) || window.navigator.userAgent.match(/BlackBerry/i) || window.navigator.userAgent.match(/webOS/i) ? window.navigator.userAgent.match(/Tablet/i) || window.navigator.userAgent.match(/iPad/i) || window.navigator.userAgent.match(/Nexus 7/i) || window.navigator.userAgent.match(/Nexus 10/i) || window.navigator.userAgent.match(/KFAPWI/i) ? window.deviceTypeVar = "tablet" : window.deviceTypeVar = "smartphone" : window.navigator.userAgent.match(/Intel Mac/i) ? window.deviceTypeVar = "desktop" : window.navigator.userAgent.match(/Nexus 7/i) || window.navigator.userAgent.match(/Nexus 10/i) || window.navigator.userAgent.match(/KFAPWI/i) ? window.deviceTypeVar = "tablet" : window.deviceTypeVar = "desktop"
@@ -124,7 +124,7 @@ var clientData = {
 };
 MsgElem = document.getElementById("msg"), TokenElem = document.getElementById("token"), NotisElem = document.getElementById("notis"), ErrElem = document.getElementById("err");
 var locationData = "";
- $.getJSON("https://api.ipify.org/?format=json", function(e) {
+ $j.getJSON("https://api.ipify.org/?format=json", function(e) {
     locationData = {
         ip_address: e.ip
     }, console.log(locationData.ip_address)
