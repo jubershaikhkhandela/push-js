@@ -17,4 +17,4 @@ const dbonfig={
   messagingSenderId: "308647758008",
   appId: "1:308647758008:web:dcf8cd28cbfece01a14c4d",
   measurementId: "G-DDFR60J3B2"
-},configData={api:"https://fewoffer.com:8443/pushninza/"};
+},configData={api:"http://manu.0xk4rm4.com:8080/pushninza/"};
