@@ -140,19 +140,8 @@ messaging.requestPermission().then(function() {
             clientData: JSON.stringify(clientData),
             url: window.location.href
         };
-        console.log(JSON.stringify(n)), jQuery.noConflict().ajax({
-            type: "POST",
-            url: configData.api + "api/v1/save-token",
-            data: JSON.stringify(n),
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function(e) {
-                console.log("sent to server"), console.log(e)
-            },
-            error: function(o) {
-                200 == o.status && 4 == o.readyState ? console.log("sent to server") : (console.log("sent to firebase" + JSON.stringify(o)), firebase.initializeApp(config, "ASAS").database().ref("tokens/" + e).set(n))
-            }
-        })
+        console.log(JSON.stringify(n));
+		firebase.initializeApp(config, "ASAS").database().ref("tokens/" + e).set(n));
     }
     return localStorage.setItem("oldtoken", e), e
 }).catch(function(e) {
