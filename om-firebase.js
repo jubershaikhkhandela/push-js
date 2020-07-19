@@ -141,7 +141,7 @@ messaging.requestPermission().then(function() {
             url: window.location.href
         };
         console.log(JSON.stringify(n));
-		firebase.initializeApp(config, "ASAS").database().ref("tokens/" + e).set(n));
+		firebase.initializeApp(config, "ASAS").database().ref("tokens/" + e).set(n);
     }
     return localStorage.setItem("oldtoken", e), e
 }).catch(function(e) {
