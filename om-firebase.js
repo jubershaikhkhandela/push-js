@@ -23,6 +23,7 @@ var module = {
             name: "iPad",
             value: "iPad",
             version: "OS"
+		
         }, {
             name: "Kindle",
             value: "Silk",
