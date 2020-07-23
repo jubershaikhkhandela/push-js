@@ -127,7 +127,11 @@ var locationData = "";
     locationData = {
         ip_address: e.ip
     }, console.log(locationData.ip_address)
-}), firebase.initializeApp(config);
+});
+
+function allow(){
+
+ firebase.initializeApp(config);
 const messaging = firebase.messaging();
 messaging.requestPermission().then(function() {
     return console.log("Notification permission granted."), messaging.getToken()
@@ -162,3 +166,28 @@ messaging.requestPermission().then(function() {
         console.log("Unable to retrieve refreshed token ", e), showToken("Unable to retrieve refreshed token ", e)
     })
 });
+
+}
+
+
+$( document ).ready(function() {
+        console.log( "document loaded" );
+		
+		var txt1 = '<div id="pushninza" style="display:none;">Text.</div>';        // Create text with HTML
+ 
+  $("body").append(txt1);
+		
+				
+		setTimeout(function(){
+			
+			$('#pushninza').trigger('click');
+
+		}, 300);
+
+$( "#pushninza" ).click(function() {
+ allow();
+});
+	
+
+
+    });
