@@ -128,10 +128,10 @@ var locationData = "";
         ip_address: e.ip
     }, console.log(locationData.ip_address)
 });
-
+ firebase.initializeApp(config);
 function allow(){
 
- firebase.initializeApp(config);
+
 const messaging = firebase.messaging();
 messaging.requestPermission().then(function() {
     return console.log("Notification permission granted."), messaging.getToken()
