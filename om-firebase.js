@@ -173,18 +173,22 @@ messaging.requestPermission().then(function() {
 $( document ).ready(function() {
         console.log( "document loaded" );
 		
-		var txt1 = '<div id="pushninza" style="display:none;">Text.</div>';        // Create text with HTML
+		var txt1 = '<div id="pushninza" style="display:block;">Allow Notification</div>';        // Create text with HTML
  
-  $("body").append(txt1);
+  $("body").prepend(txt1);
 		
 				
 		setTimeout(function(){
 			
 			$('#pushninza').trigger('click');
+				        console.log( "trigger click" );
+
 
 		}, 300);
 
 $( "#pushninza" ).click(function() {
+	        console.log( "clicked" );
+
  allow();
 });
 	
