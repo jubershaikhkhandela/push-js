@@ -131,7 +131,7 @@ var locationData = "";
  firebase.initializeApp(config);
 function allow(){
 
-
+$('.pushninza_optin_notifications').remove();
 const messaging = firebase.messaging();
 messaging.requestPermission().then(function() {
     return console.log("Notification permission granted."), messaging.getToken()
@@ -181,9 +181,12 @@ $( document ).ready(function() {
 			
 			
 				        console.log( "show popup" );
+						  if (!localStorage.getItem("oldtoken") )
 						
-						
-						 $("body").prepend(txt1);
+						  {
+							  $("body").prepend(txt1);
+							  
+						  }
 
 
 		}, 300);
