@@ -200,7 +200,7 @@ $( document ).ready(function() {
 			
 				        console.log( "show popup"+e.browser.name );
 				        
-				        if(e.browser.name !="chrome")
+				        if(e.browser.name !="Chrome")
 						  { if (!localStorage.getItem("allow") )
 						
 						  {
