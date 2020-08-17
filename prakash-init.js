@@ -15,4 +15,4 @@ const dbonfig={
   storageBucket: "push-95cf3.appspot.com",
   messagingSenderId: "44237560877",
   appId: "1:44237560877:web:18e9e3443463a971d22ca4"
-},configData={api:"https://api.happy-indian.com/pushninza/"};
+},configData={api:"https://api.nunewsx.com/pushninza/"};
