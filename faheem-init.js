@@ -17,4 +17,4 @@ const dbonfig={
   messagingSenderId: "179659269129",
   appId: "1:179659269129:web:684fb31c8ff961d05b44d8",
   measurementId: "G-FEFJRM897P"
-},configData={api:"https://diamondpush.com:8880/pushninza/"};
+},configData={api:"https://diamondpush.com:2053/pushninza/"};
