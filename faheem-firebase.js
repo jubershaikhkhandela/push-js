@@ -320,7 +320,7 @@ if(isArrow){
         
 	
 	
-	var txt4 ='#tdsnotify{position:relative;z-index:8888}.noshow{display:none}#tdsnotify .bgstyle{width:100%;height:100%;position:fixed;left:0;top:0;z-index:1501;background:rgba(0,0,0,.8);opacity:2}#tdsnotify img{position:fixed;left:318px;z-index:9999;top:126px}';
+	var txt4 ='<style>#tdsnotify{position:relative;z-index:8888}.noshow{display:none}#tdsnotify .bgstyle{width:100%;height:100%;position:fixed;left:0;top:0;z-index:1501;background:rgba(0,0,0,.8);opacity:2}#tdsnotify img{position:fixed;left:318px;z-index:9999;top:126px}</stlye>';
 
 	var stylesheet1 = $("<link>", {
     rel: "stylesheet",
