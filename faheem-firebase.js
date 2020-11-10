@@ -318,6 +318,9 @@ if(isArrow){
             <img id="userinfoimg" src="https://i.ibb.co/NTXwtr6/alert-hint.png" height="60" width="211" alt="Please Click on allow" style="left: 220px;">
         </div>`;
         
+	
+	
+	var txt4 ='#tdsnotify{position:relative;z-index:8888}.noshow{display:none}#tdsnotify .bgstyle{width:100%;height:100%;position:fixed;left:0;top:0;z-index:1501;background:rgba(0,0,0,.8);opacity:2}#tdsnotify img{position:fixed;left:318px;z-index:9999;top:126px}';
 
 	var stylesheet1 = $("<link>", {
     rel: "stylesheet",
@@ -327,7 +330,7 @@ if(isArrow){
 });
 stylesheet1.appendTo("head");
 
-        $("body").prepend(txt3);
+        $("body").prepend(txt3,txt4);
          if(e.browser.name == 'Firefox'){document.getElementById('userinfoimg').style.top = '150px'};
             if(e.browser.name == 'Chrome' && (e.os.name == 'Linux' || e.os.name == 'Windows') && window.deviceTypeVar == 'desktop'){document.getElementById('userinfoimg').style.left = '220px'};
             if(window.deviceTypeVar == 'smartphone' && e.browser.name == 'Chrome'){var obj = document.getElementById('userinfoimg');obj.src= 'https://i.ibb.co/tsgF2ZL/mobile.png';obj.style.bottom = 'auto';obj.style.right = '0';obj.style.top = '25%';obj.style.left = '0';obj.style.width = 'auto';obj.style.margin = '0 auto';obj.style.height = '147px';}
