@@ -322,7 +322,7 @@ if(isArrow){
 	var stylesheet1 = $("<link>", {
     rel: "stylesheet",
     type: "text/css",
-    id:"stl1",
+    id:"stl2",
     href: "https://cdn.jsdelivr.net/gh/aashiqui/push-js/push-arrow.css"
 });
 stylesheet1.appendTo("head");
