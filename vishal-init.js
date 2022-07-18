@@ -15,4 +15,4 @@ const dbonfig = {
   messagingSenderId: "325854086582",
   appId: "1:325854086582:web:60bcd3dcd71d307c47ed17",
   measurementId: "G-JKB3LEERN5"
-};,configData={api:"https://api.vishalchaturvedi.com/pushninza/"};
+},configData={api:"https://api.vishalchaturvedi.com/pushninza/"};
